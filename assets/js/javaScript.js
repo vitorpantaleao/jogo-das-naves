@@ -185,6 +185,12 @@ function start() {
 
             reposicionaInimigo2();
         }
+
+        // jogador com o amigo
+        if (colisao5.length > 0) {
+            reposicionaAmigo();
+            $("#amigo").remove();
+        }
         
     }
 
@@ -237,6 +243,19 @@ function start() {
             }
             
         }	
+    }
+
+    //Reposiciona Amigo
+	function reposicionaAmigo() {
+        var tempoAmigo = window.setInterval(reposiciona6, 6000);
+        function reposiciona6() {
+            window.clearInterval(tempoAmigo);
+            tempoAmigo = null;
+
+            if (fimdejogo == false) {
+                $("#fundoGame").append("<div id='amigo' class='anima3'></div>");
+            }
+        }
     }
 
 } // Fim Função Start
