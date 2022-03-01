@@ -33,6 +33,7 @@ function start() {
         movejogador()
         moveinimigo1()
         moveinimigo2()
+        moveamigo()
 	}
 
     //Funcao que movimenta o fundo do jogo
@@ -87,6 +88,15 @@ function start() {
         $("#inimigo2").css("left",posicaoX - 3);
         if (posicaoX <= 0) {
             $("#inimigo2").css("left", 775);     
+        }
+    }
+
+    // Funcao move amigo
+    function moveamigo() {
+        posicaoX = parseInt($("#amigo").css("left"));
+        $("#amigo").css("left",posicaoX + 1);
+        if (posicaoX > 906) {
+            $("#amigo").css("left", 0);  
         }
     }
 
