@@ -38,6 +38,26 @@ body {
 	opacity: .7;
 }
 
+.end {
+	border: 2px solid #603A03;
+	padding: 0;
+	display: block;
+	border-radius: 4px;
+	width: 80%;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.end:hover {
+	border: 2px solid #603A03;
+	background-color: #603A03;
+}
+
+.end:hover h3{
+	color: #FFF !important;
+}
+
 #container{
 	width:950px;
 	height:auto;
@@ -265,4 +285,21 @@ h2 {
 	position: absolute;
 	left: 750px;
 	top: 7px;	
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+	margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
 }
