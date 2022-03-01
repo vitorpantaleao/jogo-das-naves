@@ -175,11 +175,11 @@ body {
 }
 
 @-ms-keyframes play2 {
-   from { background-position:    0px; }
-     to { background-position: -528px; }
+   	from { background-position:    0px; }
+	to { background-position: -528px; }
 }
 
 @-o-keyframes play2 {
-   from { background-position:    0px; }
-     to { background-position: -528px; }
+   	from { background-position:    0px; }
+	to { background-position: -528px; }
 }
