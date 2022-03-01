@@ -359,3 +359,10 @@ function start() {
     }
 
 } // Fim Função Start
+
+//Reinicia o Jogo
+function reiniciaJogo() {
+	somGameover.pause();
+	$("#fim").remove();
+	start();
+}
