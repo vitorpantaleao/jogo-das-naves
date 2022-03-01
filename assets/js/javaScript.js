@@ -32,6 +32,7 @@ function start() {
         movefundo()
         movejogador()
         moveinimigo1()
+        moveinimigo2()
 	}
 
     //Funcao que movimenta o fundo do jogo
@@ -61,13 +62,12 @@ function start() {
         }
         
         if (jogo.pressionou[tecla.D]) {
-            
             //Chama funcao Disparo	
         }
     
     }
 
-    //Fim da funcao moveinimigo1
+    // Funcao move inimigo 1
     function moveinimigo1() {
         posicaoX = parseInt($("#inimigo1").css("left"));
         $("#inimigo1").css("left",posicaoX - velocidade);
@@ -78,6 +78,15 @@ function start() {
             $("#inimigo1").css("left", 694);
             $("#inimigo1").css("top", osicaoY);
             
+        }
+    }
+
+    // Funcao move inimigo 2
+    function moveinimigo2() {
+        posicaoX = parseInt($("#inimigo2").css("left"));
+        $("#inimigo2").css("left",posicaoX - 3);
+        if (posicaoX <= 0) {
+            $("#inimigo2").css("left", 775);     
         }
     }
 
