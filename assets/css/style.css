@@ -175,12 +175,12 @@ body {
 }
 
 @-ms-keyframes play2 {
-   	from { background-position:    0px; }
+   	from { background-position: 0px; }
 	to { background-position: -528px; }
 }
 
 @-o-keyframes play2 {
-   	from { background-position:    0px; }
+   	from { background-position: 0px; }
 	to { background-position: -528px; }
 }
 
@@ -189,4 +189,16 @@ body {
 	height: 8px;
 	position: absolute;
 	background-image: url(../img/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
 }
