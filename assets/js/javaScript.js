@@ -43,13 +43,18 @@ function start() {
         if (jogo.pressionou[tecla.W]) {
             var topo = parseInt($("#jogador").css("top"));
             $("#jogador").css("top", topo - 10);
-        
+            if (topo<=0) {
+                $("#jogador").css("top",topo+10);
+            }
         }
         
         if (jogo.pressionou[tecla.S]) {
-            
             var topo = parseInt($("#jogador").css("top"));
             $("#jogador").css("top", topo + 10);	
+            if (topo>=434) {	
+                $("#jogador").css("top",topo-10);
+                    
+            }
         }
         
         if (jogo.pressionou[tecla.D]) {
