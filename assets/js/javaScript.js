@@ -35,6 +35,7 @@ function start() {
         moveinimigo1()
         moveinimigo2()
         moveamigo()
+        colisao()
 	}
 
     //Funcao que movimenta o fundo do jogo
@@ -127,6 +128,15 @@ function start() {
                 podeAtirar = true;
             }
         }
+    }
+
+    // Funcao de colisao
+    function colisao() {
+        var colisao1 = ($("#jogador").collision($("#inimigo1")));
+        // jogador com o inimigo1
+    
+        console.log(colisao1);
+    
     }
 
 }
